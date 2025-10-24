@@ -36,9 +36,25 @@ curl http://localhost:8000/health
 
 ## 📚 Documentation
 
+### Getting Started
 - **[README-run.md](README-run.md)** - Complete setup guide with all commands
+- **[MONGODB-SETUP.md](MONGODB-SETUP.md)** - Database setup (3 options: Local, Atlas, Docker)
+- **[QUICK-REFERENCE.md](QUICK-REFERENCE.md)** - Demo day cheat sheet
+
+### Project Info
 - **[PROJECT-SUMMARY.md](PROJECT-SUMMARY.md)** - What's been created and project stats
+- **[COMPLETION-SUMMARY.md](COMPLETION-SUMMARY.md)** - Latest additions and features
+
+### Demo & Testing
+- **[DEMO.txt](DEMO.txt)** - 3-minute judge-ready demo script ⭐
+- **[tests.sh](tests.sh)** - Comprehensive test suite (Bash) ⭐
+- **[tests.ps1](tests.ps1)** - Comprehensive test suite (PowerShell) ⭐
+- **[TEST-GUIDE.md](TEST-GUIDE.md)** - Complete testing instructions
+
+### Specialized Docs
 - **[ai-engine/README.md](ai-engine/README.md)** - AI engine documentation
+- **[LOADING-SCREEN-SETUP.md](LOADING-SCREEN-SETUP.md)** - Loading screen guide
+- **[frontend/LOADING-SCREEN-README.md](frontend/LOADING-SCREEN-README.md)** - Detailed loading docs
 
 ---
 
