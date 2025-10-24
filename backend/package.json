@@ -1,0 +1,26 @@
+{
+  "name": "at-your-service-backend",
+  "version": "1.0.0",
+  "description": "Backend for AI Agent Local Services platform",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "seed": "node seed.js"
+  },
+  "keywords": ["local-services", "ai-agent", "mern"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "express-rate-limit": "^7.1.5",
+    "nodemailer": "^6.9.7"
+  }
+}
