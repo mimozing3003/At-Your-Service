@@ -120,9 +120,15 @@ plumber in Habra under 500
 
 ## 📚 Documentation
 
-- [QUICK-START.md](QUICK-START.md) - Quick reference
-- [PREVIEW.md](PREVIEW.md) - Feature showcase
-- [DEPLOYMENT-COMPLETE.md](DEPLOYMENT-COMPLETE.md) - Full guide
+**📖 [Complete Documentation](DOCUMENTATION.md)** - Everything in one place!
+
+Includes:
+- Quick Start Guide
+- Installation Steps  
+- API Reference
+- Deployment Instructions
+- Troubleshooting
+- And more!
 
 ---
 
