@@ -85,33 +85,33 @@ const Home = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-24">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
               Home services at your doorstep
             </h1>
-            <p className="text-xl md:text-2xl mb-12 text-blue-100">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 text-blue-100 px-2">
               Book trusted professionals for home services with AI-powered recommendations
             </p>
 
             {/* Search Bar */}
-            <div className="max-w-2xl mx-auto">
+            <div className="max-w-2xl mx-auto px-2">
               <form onSubmit={handleSearch} className="relative">
-                <div className="flex rounded-lg shadow-lg bg-white overflow-hidden">
+                <div className="flex flex-col sm:flex-row rounded-lg shadow-lg bg-white overflow-hidden">
                   <input
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search for 'plumber near me', 'AC repair under 500'..."
-                    className="flex-1 px-6 py-4 text-gray-900 text-lg focus:outline-none"
+                    placeholder="Search: 'plumber near me under 500'..."
+                    className="flex-1 px-4 sm:px-6 py-3 sm:py-4 text-gray-900 text-base sm:text-lg focus:outline-none"
                   />
                   <button
                     type="submit"
                     disabled={isSearching}
-                    className="bg-blue-600 hover:bg-blue-700 px-8 py-4 text-white font-semibold disabled:opacity-50 transition-colors"
+                    className="bg-blue-600 hover:bg-blue-700 px-6 sm:px-8 py-3 sm:py-4 text-white font-semibold disabled:opacity-50 transition-colors w-full sm:w-auto"
                   >
                     {isSearching ? (
-                      <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
+                      <div className="animate-spin rounded-full h-5 w-5 sm:h-6 sm:w-6 border-b-2 border-white mx-auto"></div>
                     ) : (
                       'Search'
                     )}

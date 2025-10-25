@@ -84,20 +84,20 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           </video>
         ) : (
           // Fallback when video fails to load
-          <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br ${loadingScreenConfig.fallbackGradient.from} ${loadingScreenConfig.fallbackGradient.to}`}>
+          <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br ${loadingScreenConfig.fallbackGradient.from} ${loadingScreenConfig.fallbackGradient.to} px-4`}>
             <div className="text-center text-white">
-              <div className="animate-spin rounded-full h-20 w-20 border-t-4 border-b-4 border-white mx-auto mb-6" />
-              <h2 className="text-3xl font-bold mb-2">ServiceAI</h2>
-              <p className="text-xl text-blue-100">Loading your experience...</p>
+              <div className="animate-spin rounded-full h-16 w-16 sm:h-20 sm:w-20 border-t-4 border-b-4 border-white mx-auto mb-4 sm:mb-6" />
+              <h2 className="text-2xl sm:text-3xl font-bold mb-2">At Your Service</h2>
+              <p className="text-base sm:text-xl text-blue-100">Loading your experience...</p>
             </div>
           </div>
         )}
 
-        {/* Skip Button */}
+        {/* Skip Button - Responsive */}
         {loadingScreenConfig.allowSkip && (
           <button
             onClick={handleSkip}
-            className="absolute bottom-8 right-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full font-medium transition-all duration-300 border border-white/30 hover:border-white/50 hover:scale-105 active:scale-95 shadow-lg"
+            className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-medium transition-all duration-300 border border-white/30 hover:border-white/50 hover:scale-105 active:scale-95 shadow-lg"
             aria-label="Skip loading screen"
           >
             <span className="flex items-center gap-2">
@@ -109,11 +109,11 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           </button>
         )}
 
-        {/* Brand Watermark (optional) */}
+        {/* Brand Watermark - Responsive */}
         {loadingScreenConfig.showBrandWatermark && (
-          <div className="absolute top-8 left-8 text-white">
-            <h1 className="text-2xl font-bold">ServiceAI</h1>
-            <p className="text-sm text-white/70">Home Services Platform</p>
+          <div className="absolute top-4 left-4 sm:top-8 sm:left-8 text-white">
+            <h1 className="text-xl sm:text-2xl font-bold">At Your Service</h1>
+            <p className="text-xs sm:text-sm text-white/70">Home Services Platform</p>
           </div>
         )}
       </div>
