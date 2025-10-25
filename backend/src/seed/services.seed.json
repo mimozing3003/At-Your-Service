@@ -193,6 +193,158 @@
     ]
   },
   {
+    "category": "Tutor",
+    "name": "English Pro Teachers",
+    "description": "Expert English teacher for spoken English, grammar, and IELTS preparation. Home tuition available.",
+    "rating": 4.8,
+    "price": 600,
+    "price_unit": "per-hour",
+    "location": {
+      "city": "Siliguri",
+      "address": "15 Hill Cart Road, Siliguri",
+      "coords": { "lat": 26.7271, "lng": 88.3953 }
+    },
+    "phone": "+91-9123456711",
+    "verifiedProvider": true,
+    "reviews": [
+      { "user": "Riya Sarkar", "comment": "Excellent teacher! My speaking improved a lot.", "rating": 5 },
+      { "user": "Arjun Bose", "comment": "Very patient and professional.", "rating": 5 }
+    ]
+  },
+  {
+    "category": "Tutor",
+    "name": "Science Master Classes",
+    "description": "Physics, Chemistry, Biology tutor for class 9-12 and NEET/JEE. Online and offline classes.",
+    "rating": 4.9,
+    "price": 800,
+    "price_unit": "per-hour",
+    "location": {
+      "city": "Durgapur",
+      "address": "22 City Centre, Durgapur",
+      "coords": { "lat": 23.5204, "lng": 87.3119 }
+    },
+    "phone": "+91-9234567822",
+    "verifiedProvider": true,
+    "reviews": [
+      { "user": "Priyanka Das", "comment": "Best teacher for NEET preparation!", "rating": 5 },
+      { "user": "Saurav Sen", "comment": "Clear explanations, highly recommended.", "rating": 5 }
+    ]
+  },
+  {
+    "category": "Beauty",
+    "name": "Glam Studio Salon",
+    "description": "Professional beauty services: haircut, spa, facial, bridal makeup, and skincare treatments.",
+    "rating": 4.6,
+    "price": 500,
+    "price_unit": "per-session",
+    "location": {
+      "city": "Asansol",
+      "address": "45 GT Road, Asansol",
+      "coords": { "lat": 23.6739, "lng": 86.9524 }
+    },
+    "phone": "+91-9345678933",
+    "verifiedProvider": true,
+    "reviews": [
+      { "user": "Ananya Roy", "comment": "Amazing bridal makeup! Everyone loved it.", "rating": 5 },
+      { "user": "Ritika Sharma", "comment": "Clean salon, professional staff.", "rating": 5 }
+    ]
+  },
+  {
+    "category": "Beauty",
+    "name": "Style Icon Unisex Salon",
+    "description": "Modern unisex salon with hairstyling, coloring, keratin treatment, and grooming services.",
+    "rating": 4.4,
+    "price": 350,
+    "price_unit": "per-session",
+    "location": {
+      "city": "Bardhaman",
+      "address": "12 Station Road, Bardhaman",
+      "coords": { "lat": 23.2324, "lng": 87.8615 }
+    },
+    "phone": "+91-9456789044",
+    "verifiedProvider": true,
+    "reviews": [
+      { "user": "Rahul Chatterjee", "comment": "Best haircut in town!", "rating": 5 },
+      { "user": "Sneha Gupta", "comment": "Affordable and quality service.", "rating": 4 }
+    ]
+  },
+  {
+    "category": "Yoga",
+    "name": "Zen Yoga & Wellness",
+    "description": "Yoga classes for beginners to advanced. Meditation, pranayama, and wellness programs available.",
+    "rating": 4.9,
+    "price": 400,
+    "price_unit": "per-session",
+    "location": {
+      "city": "Siliguri",
+      "address": "8 Sevoke Road, Siliguri",
+      "coords": { "lat": 26.7230, "lng": 88.3952 }
+    },
+    "phone": "+91-9567890155",
+    "verifiedProvider": true,
+    "reviews": [
+      { "user": "Meera Joshi", "comment": "Peaceful environment, excellent instructor.", "rating": 5 },
+      { "user": "Vikram Singh", "comment": "Transformed my lifestyle!", "rating": 5 }
+    ]
+  },
+  {
+    "category": "Yoga",
+    "name": "Fitness Yoga Studio",
+    "description": "Power yoga, weight loss yoga, and therapeutic yoga sessions. Personal training available.",
+    "rating": 4.7,
+    "price": 500,
+    "price_unit": "per-session",
+    "location": {
+      "city": "Midnapore",
+      "address": "34 College Road, Midnapore",
+      "coords": { "lat": 22.4248, "lng": 87.3201 }
+    },
+    "phone": "+91-9678901266",
+    "verifiedProvider": true,
+    "reviews": [
+      { "user": "Anjali Mukherjee", "comment": "Lost 10kg in 3 months!", "rating": 5 },
+      { "user": "Amit Das", "comment": "Great instructor, very motivating.", "rating": 5 }
+    ]
+  },
+  {
+    "category": "Electrician",
+    "name": "Quick Fix Electricals",
+    "description": "Emergency electrical services, fan installation, light fittings, and MCB repairs.",
+    "rating": 4.3,
+    "price": 250,
+    "price_unit": "per-hour",
+    "location": {
+      "city": "Durgapur",
+      "address": "67 Benachity, Durgapur",
+      "coords": { "lat": 23.5505, "lng": 87.2795 }
+    },
+    "phone": "+91-9789012377",
+    "verifiedProvider": false,
+    "reviews": [
+      { "user": "Sunil Pal", "comment": "Fast and affordable service.", "rating": 4 },
+      { "user": "Kavita Sen", "comment": "Good work but needs better communication.", "rating": 4 }
+    ]
+  },
+  {
+    "category": "Plumber",
+    "name": "DrainCare Plumbing",
+    "description": "Drain cleaning, pipe fitting, bathroom renovation, and emergency plumbing services.",
+    "rating": 4.5,
+    "price": 400,
+    "price_unit": "fixed",
+    "location": {
+      "city": "Asansol",
+      "address": "89 Burnpur Road, Asansol",
+      "coords": { "lat": 23.6752, "lng": 86.9860 }
+    },
+    "phone": "+91-9890123488",
+    "verifiedProvider": true,
+    "reviews": [
+      { "user": "Rajesh Kumar", "comment": "Solved my drainage problem quickly.", "rating": 5 },
+      { "user": "Neha Agarwal", "comment": "Professional and clean work.", "rating": 4 }
+    ]
+  },
+  {
     "category": "Gym",
     "name": "PowerHouse Gym",
     "description": "Hardcore bodybuilding and powerlifting gym. Expert trainers, nutrition counseling, and supplement store on-site.",

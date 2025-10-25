@@ -12,6 +12,7 @@ import Booking from './pages/Booking'
 import UserDashboard from './pages/UserDashboard'
 import ProviderDashboard from './pages/ProviderDashboard'
 import { AuthProvider, useAuth } from './utils/auth'
+import { DarkModeProvider } from './utils/darkMode'
 
 // Protected Route Component
 const ProtectedRoute = ({ children, requireAuth = true, redirectTo = "/login" }) => {
@@ -36,7 +37,7 @@ const ProtectedRoute = ({ children, requireAuth = true, redirectTo = "/login" })
 
 function AppContent() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
       <Navbar />
       <Routes>
         {/* Public Routes */}
@@ -126,9 +127,11 @@ function App() {
       )}
       
       <Router>
-        <AuthProvider>
-          <AppContent />
-        </AuthProvider>
+        <DarkModeProvider>
+          <AuthProvider>
+            <AppContent />
+          </AuthProvider>
+        </DarkModeProvider>
       </Router>
     </>
   )

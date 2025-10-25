@@ -28,7 +28,7 @@ const serviceSchema = new mongoose.Schema({
   category: {
     type: String,
     required: [true, 'Category is required'],
-    enum: ['Plumber', 'Electrician', 'Gym', 'Tutor', 'AC Repair', 'Mechanic', 'Cleaning'],
+    enum: ['Plumber', 'Electrician', 'Gym', 'Tutor', 'AC Repair', 'Mechanic', 'Cleaning', 'Beauty', 'Yoga'],
     index: true
   },
   name: {
@@ -54,7 +54,7 @@ const serviceSchema = new mongoose.Schema({
   },
   price_unit: {
     type: String,
-    enum: ['fixed', 'per-hour', 'per-day', 'per-month'],
+    enum: ['fixed', 'per-hour', 'per-day', 'per-month', 'per-session'],
     default: 'fixed'
   },
   location: {
