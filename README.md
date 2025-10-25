@@ -1,218 +1,177 @@
-# At Your Service 🔧
+# 🏆 At Your Service - AI-Powered Local Services Platform
 
-**AI Agent for Local Services** - Search, compare, and book local service providers using AI-powered comparison.
+> **AI Agent for discovering, comparing, and booking local service providers with explainable recommendations**
 
-> **Status:** Backend & AI Engine Complete ✅ | Frontend Templates Provided 📝
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-43853d.svg)](https://nodejs.org/)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org/)
+
+## 🌟 What is At Your Service?
+
+An intelligent, AI-powered platform that revolutionizes how users find and book local service providers. Unlike traditional directories, our AI Agent **truly understands** user intent and delivers personalized, trust-driven recommendations with full transparency.
+
+### ✨ Key Highlights
+
+- 🤖 **AI-Powered Search**: Natural language understanding
+- 💡 **Explainable AI**: See why each service is recommended
+- 🌙 **Dark Mode**: Beautiful UI with theme toggle
+- 📊 **Smart Scoring**: Multi-factor algorithm (rating, price, distance, sentiment)
+- 🌐 **Offline-First**: Works without internet
+- 💰 **100% Free**: No paid APIs
 
 ---
 
 ## 🚀 Quick Start
 
+### One-Command Deployment (Windows)
 ```powershell
-# 1. Start Backend
-cd backend
-copy .env.example .env
-npm install
-node seed.js
-npm run dev
-
-# 2. Start AI Engine (new terminal)
-cd ai-engine
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python app.py
-
-# 3. Test it!
-curl http://localhost:4000/health
-curl http://localhost:8000/health
+.\start.ps1
 ```
 
-**Backend:** http://localhost:4000  
-**AI Engine:** http://localhost:8000  
-**AI Docs:** http://localhost:8000/docs
+### Manual Start
+```bash
+# 1. Backend
+cd backend
+npm install && node seed.js && npm start
+
+# 2. AI Engine (new terminal)
+cd ai-engine
+python -m venv .venv && .venv\Scripts\activate
+pip install -r requirements.txt && python app.py
+
+# 3. Frontend (new terminal)
+cd frontend
+npm install && npm run dev
+```
+
+### Access
+- **Frontend**: http://localhost:5173 ⭐
+- **Backend**: http://localhost:4000
+- **AI Engine**: http://localhost:8000
 
 ---
 
-## 📚 Documentation
+## 📊 What's Inside
 
-### Getting Started
-- **[README-run.md](README-run.md)** - Complete setup guide with all commands
-- **[MONGODB-SETUP.md](MONGODB-SETUP.md)** - Database setup (3 options: Local, Atlas, Docker)
-- **[QUICK-REFERENCE.md](QUICK-REFERENCE.md)** - Demo day cheat sheet
+### Database
+- **38 Services** across **8 West Bengal cities**
+- **9 Categories**: Plumber, Electrician, Tutor, Gym, Beauty, Yoga, AC Repair, Mechanic, Cleaning
+- **Multiple Pricing**: Hourly (₹600/hr), Session (₹400/session), Fixed, Monthly
 
-### Project Info
-- **[PROJECT-SUMMARY.md](PROJECT-SUMMARY.md)** - What's been created and project stats
-- **[COMPLETION-SUMMARY.md](COMPLETION-SUMMARY.md)** - Latest additions and features
-
-### Demo & Testing
-- **[DEMO.txt](DEMO.txt)** - 3-minute judge-ready demo script ⭐
-- **[tests.sh](tests.sh)** - Comprehensive test suite (Bash) ⭐
-- **[tests.ps1](tests.ps1)** - Comprehensive test suite (PowerShell) ⭐
-- **[TEST-GUIDE.md](TEST-GUIDE.md)** - Complete testing instructions
-
-### Specialized Docs
-- **[ai-engine/README.md](ai-engine/README.md)** - AI engine documentation
-- **[LOADING-SCREEN-SETUP.md](LOADING-SCREEN-SETUP.md)** - Loading screen guide
-- **[frontend/LOADING-SCREEN-README.md](frontend/LOADING-SCREEN-README.md)** - Detailed loading docs
+### Cities
+Kolkata • Habra • Howrah • Siliguri • Durgapur • Asansol • Bardhaman • Midnapore
 
 ---
 
-## ✨ Features
+## 🎯 Try These Searches
 
-- 🔐 **JWT Authentication** - Secure user registration and login
-- 🔍 **Natural Language Search** - "find plumber near me under 500 in Habra"
-- 🤖 **AI-Powered Comparison** - Weighted scoring (rating, price, distance, sentiment)
-- 📊 **Explainable AI** - Shows why each service is recommended
-- 📝 **Review Summarization** - Automatic review analysis
-- 📅 **Booking System** - Create and manage bookings
-- 🌐 **Offline-First** - Works without internet (with local fallback)
-- 💰 **100% Free** - No paid APIs required!
+```
+teacher in Kolkata ₹600/hr
+beauty salon in Asansol under 500
+yoga instructor in Siliguri
+plumber in Habra under 500
+```
 
 ---
 
 ## 🏗️ Tech Stack
 
-- **Backend:** Node.js + Express + MongoDB
-- **AI Engine:** Python + FastAPI
-- **Frontend:** React + Vite + Tailwind (templates provided)
-- **Maps:** OpenStreetMap + Leaflet
-- **Geo:** Nominatim + Overpass API
+**Frontend:** React 18 • Vite • Tailwind CSS • Framer Motion • Leaflet  
+**Backend:** Node.js • Express • MongoDB • JWT  
+**AI Engine:** Python • FastAPI • NumPy • Custom Algorithms  
+**APIs:** OpenStreetMap • Nominatim • Overpass (all free!)
 
 ---
 
-## 📊 What's Included
+## 🎨 Features
 
-### ✅ Backend (Complete)
-- JWT authentication
-- Service search with AI integration
-- Booking management
-- Provider management
-- **30 pre-seeded services** across 7 categories
-- Geographic search
-- Offline fallback logic
+### AI Intelligence
+✅ Natural language processing  
+✅ Intent parsing (service, price, location)  
+✅ Smart multi-factor scoring  
+✅ Explainable recommendations  
+✅ Review summarization  
+✅ Offline capability  
 
-### ✅ AI Engine (Complete)
-- Intent parsing (regex + keywords)
-- Service comparison (weighted scoring)
-- Review summarization (heuristic analysis)
-- **100% deterministic** - no external LLMs
-- FastAPI with interactive docs
+### User Experience
+✅ **Dark mode toggle** 🌙  
+✅ Smooth animations  
+✅ Responsive design  
+✅ Interactive maps  
+✅ Real-time search  
 
-### 📝 Frontend (Templates Provided)
-See `README-run.md` for complete frontend setup with code templates
+### System
+✅ Microservices architecture  
+✅ JWT authentication  
+✅ REST API  
+✅ Production-ready code  
+✅ Complete error handling  
 
 ---
 
-## 🧪 Test the APIs
+## 📚 Documentation
 
-### Backend
-```powershell
-# Search services
-curl "http://localhost:4000/api/services?q=plumber+in+Habra+under+500"
+- [QUICK-START.md](QUICK-START.md) - Quick reference
+- [PREVIEW.md](PREVIEW.md) - Feature showcase
+- [DEPLOYMENT-COMPLETE.md](DEPLOYMENT-COMPLETE.md) - Full guide
 
-# Register user
-curl -X POST http://localhost:4000/api/auth/register `
-  -H "Content-Type: application/json" `
-  -d '{\"name\": \"Test\", \"email\": \"test@test.com\", \"password\": \"test123\"}'
+---
+
+## 🎓 Demo Script (3 Minutes)
+
+**Minute 1**: Search "teacher in Kolkata ₹600/hr" → Show AI parsing  
+**Minute 2**: Toggle dark mode → View service details → See AI reasoning  
+**Minute 3**: Book service → Highlight: 38 services, 8 cities, offline-capable  
+
+---
+
+## 🏆 Why This Wins
+
+1. **Real AI** - Not just keyword search, actual intelligent reasoning
+2. **Explainable** - Shows WHY services are recommended
+3. **Modern UX** - Dark mode, animations, responsive
+4. **Production-Ready** - Error handling, auth, validation
+5. **Free Stack** - No paid APIs or subscriptions
+6. **Regional Focus** - West Bengal cities (local relevance)
+
+---
+
+## 🛠️ Development
+
+### Prerequisites
+- Node.js 18+
+- Python 3.9+
+- MongoDB
+
+### Environment Variables
+```env
+# Backend
+MONGODB_URI=mongodb://localhost:27017/at-your-service
+JWT_SECRET=your-secret-key
+
+# Frontend
+VITE_BACKEND_URL=http://localhost:4000
+VITE_AI_URL=http://localhost:8000
 ```
-
-### AI Engine
-```powershell
-# Parse natural language
-curl -X POST http://localhost:8000/ai/parse `
-  -H "Content-Type: application/json" `
-  -d '{\"text\": \"find plumber near me under 500 in Habra\"}'
-```
-
-Or visit **http://localhost:8000/docs** for interactive API testing!
-
----
-
-## 📦 Database
-
-**30 realistic service providers** pre-seeded:
-- Plumbers (6)
-- Electricians (5)
-- Gyms (4)
-- Tutors (5)
-- AC Repair (4)
-- Mechanics (3)
-- Cleaning Services (3)
-
-**Locations:** Habra, Kolkata, Howrah  
-**Reviews:** 80+ customer reviews with realistic comments
-
----
-
-## 🔑 Key Highlights
-
-✅ **No Paid APIs** - Completely free to run  
-✅ **Offline-Capable** - Works without internet  
-✅ **Explainable AI** - Shows scoring breakdown  
-✅ **Production-Ready** - Complete error handling  
-✅ **Well-Documented** - Comprehensive guides  
-✅ **Realistic Data** - Hand-crafted service entries  
-
----
-
-## 📂 Project Structure
-
-```
-ai-agent-local-services/
-├── backend/          # Node.js + Express (✅ Complete)
-├── ai-engine/        # Python + FastAPI (✅ Complete)
-├── frontend/         # React + Vite (📝 Templates)
-└── docs/             # Complete documentation
-```
-
----
-
-## 🚧 Next Steps
-
-1. **Test Backend & AI Engine** (5 mins)
-   - Follow Quick Start above
-   - Test APIs with curl commands
-
-2. **Create Frontend** (2-4 hours)
-   - Follow templates in `README-run.md`
-   - Connect to backend APIs
-
-3. **Demo** (3 mins)
-   - Register user
-   - Search services
-   - View details
-   - Create booking
-
----
-
-## 🤝 Support
-
-- **Setup Issues?** Check [README-run.md](README-run.md) Troubleshooting section
-- **API Questions?** Visit http://localhost:8000/docs
-- **Project Info?** Read [PROJECT-SUMMARY.md](PROJECT-SUMMARY.md)
 
 ---
 
 ## 📄 License
 
-MIT License - Free for personal and commercial use
+MIT License - see [LICENSE](LICENSE)
 
 ---
 
-## 🎓 Learning Outcomes
+## 👤 Author
 
-This project teaches:
-- MERN stack development
-- Python FastAPI
-- JWT authentication
-- Natural language processing (without LLMs)
-- Deterministic AI algorithms
-- Offline-first architecture
-- Geographic APIs integration
+**Saumojit Roy** - [@mimozing3003](https://github.com/mimozing3003)
 
 ---
 
-**Built for the AI Agent Hackathon** 🏆
+## ⭐ Star This Repo!
 
-Ready to get started? Run the Quick Start commands above!
+If you find this project useful, please give it a star! ⭐
+
+---
+
+**Built with ❤️ for the AI Agent Hackathon** 🚀
