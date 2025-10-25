@@ -5,6 +5,15 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-43853d.svg)](https://nodejs.org/)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org/)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel)](https://frontend-9u93btqu7-saumojit-roys-projects.vercel.app)
+
+## 🚀 Live Demo
+
+**🌐 [View Live on Vercel](https://frontend-9u93btqu7-saumojit-roys-projects.vercel.app)**
+
+*Note: Frontend is deployed. For full functionality, backend & AI engine need to be hosted (see [Deployment Guide](VERCEL-DEPLOYMENT.md)).*
+
+---
 
 ## 🌟 What is At Your Service?
 
