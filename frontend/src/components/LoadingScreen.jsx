@@ -68,7 +68,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
       }`}
     >
       {/* Video Container */}
-      <div className="relative w-full h-full flex items-center justify-center">
+      <div className="relative w-full h-full overflow-hidden">
         {!videoError ? (
           <video
             ref={videoRef}
@@ -77,7 +77,8 @@ const LoadingScreen = ({ onLoadingComplete }) => {
             playsInline
             onEnded={handleVideoEnd}
             onError={handleVideoError}
-            className="w-full h-full object-cover"
+            className="absolute top-0 left-0 w-full h-full object-contain bg-black"
+            style={{ maxWidth: '100%', maxHeight: '100vh' }}
           >
             <source src={loadingScreenConfig.videoPath} type="video/mp4" />
             Your browser does not support the video tag.
